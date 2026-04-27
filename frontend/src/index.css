@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --background: #f5fbf9;
+  --background-strong: #e9f7f2;
+  --surface: rgba(255, 255, 255, 0.88);
+  --surface-strong: rgba(255, 255, 255, 0.96);
+  --foreground: #153833;
+  --muted: #58746c;
+  --border: rgba(18, 74, 66, 0.14);
+  --teal: #0f766e;
+  --teal-deep: #0a4c46;
+  --mint: #d8f3ec;
+  --sun: #ffd177;
+  --coral: #ff8f66;
+  --shadow: 0 26px 80px rgba(9, 38, 34, 0.14);
+}
+
+@theme {
+  --font-sans: 'Manrope', sans-serif;
+  --font-display: 'Sora', sans-serif;
+}
+
+@layer base {
+  * {
+    @apply border-[color:var(--border)];
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply m-0 min-h-screen text-[color:var(--foreground)] antialiased;
+    background:
+      linear-gradient(180deg, rgba(245, 251, 249, 0.9), rgba(245, 251, 249, 0.96)),
+      linear-gradient(rgba(15, 118, 110, 0.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(15, 118, 110, 0.045) 1px, transparent 1px);
+    background-color: var(--background);
+    background-size: auto, 44px 44px, 44px 44px;
+    font-family: var(--font-sans);
+  }
+
+  a {
+    @apply text-inherit no-underline;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+
+  #root {
+    @apply min-h-screen;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: 0;
+  }
+}
+
+@layer utilities {
+  .shell {
+    @apply mx-auto w-full max-w-[1280px] px-4 sm:px-6 lg:px-8;
+  }
+
+  .surface {
+    @apply border backdrop-blur-xl;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+  }
+
+  .surface-strong {
+    @apply border backdrop-blur-xl;
+    background: var(--surface-strong);
+    box-shadow: var(--shadow);
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.24em] text-[color:var(--teal)];
+  }
+
+  .hero-grid {
+    background:
+      linear-gradient(rgba(255, 255, 255, 0.14) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.14) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+}
