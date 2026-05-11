@@ -54,4 +54,4 @@ The purpose of CampusRent is to build a campus-centered digital rental solution 
 
 ## Author
 
-Built for academic, project, and demo purposes.
+Built for academic, project, and demo purposes only.
