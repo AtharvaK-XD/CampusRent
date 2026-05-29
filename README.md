@@ -52,6 +52,3 @@ backend/    Express + Socket.io backend
 
 The purpose of CampusRent is to build a campus-centered digital rental solution that helps students borrow and lend useful items more efficiently. It demonstrates how a modern full-stack web application can support trust, convenience, accessibility, and better resource sharing inside a student community. [file:1]
 
-## Author
-
-Built for academic, project, and demo purposes only.
