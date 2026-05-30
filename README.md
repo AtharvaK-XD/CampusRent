@@ -1,54 +1,123 @@
-# CampusRent
+# CampusRent 🏕️
 
-CampusRent is a full-stack college-focused rental marketplace built for students. It is designed to make borrowing and lending easier within a campus ecosystem through a trusted, simple, and user-friendly digital platform. The product focuses on improving accessibility to useful items, enabling peer-to-peer rentals, and creating a smoother student experience for short-term campus needs.
+> **A peer-to-peer rental marketplace built for college students.**  
+> Borrow what you need. Lend what you have. Stay on campus.
 
-## Product Description
+---
 
-CampusRent is built as a student-first platform where users can explore listings, rent items for short durations, and manage lender or borrower activities through a clean and responsive interface. The platform is designed around campus convenience, trust-based interactions, and a streamlined workflow that supports both item owners and renters.
+## What is CampusRent?
+
+CampusRent is a student-first platform that makes it easy to rent items within your campus community — no sketchy strangers, no overpriced stores, no hassle. Whether you need a projector for a presentation, a drill for your hostel wall, or a camera for a weekend trip, CampusRent connects you with a fellow student who has it.
+
+Built around trust, convenience, and simplicity — because college students shouldn't have to buy everything they only need once.
+
+---
 
 ## Features
 
-- Student-focused rental marketplace
-- Borrower and lender workflows
-- Reverse-auction style pricing concept
-- Short rental windows
-- Verified trust-based campus interactions
-- Real-time notifications
-- Responsive frontend interface
-- Dashboard views for different users
+- 🔄 **Peer-to-Peer Rentals** — list items as a lender or browse as a borrower
+- 🏷️ **Reverse Auction Pricing** — borrowers can bid; lenders choose the best offer
+- ⏱️ **Short-term Rental Windows** — designed for quick, campus-length durations
+- 🔔 **Real-time Notifications** — instant updates via Socket.io
+- 🧾 **Separate Dashboards** — tailored views for lenders and borrowers
+- ✅ **Trust-based Verification** — campus-only interactions for safety
+- 📱 **Fully Responsive** — works across mobile, tablet, and desktop
 
-## Frontend
+---
 
-The frontend is developed to provide an interactive and smooth user experience for students using the platform. It handles navigation, listing exploration, dashboards, validation, responsive layouts, animations, and data presentation for different user flows. The frontend setup in the attached files uses React with Vite and includes libraries for forms, validation, routing, state management, animations, and charts. [file:9][file:15]
+## Tech Stack
 
-### Frontend Tech
-- React
-- Vite
-- Tailwind CSS
-- Framer Motion
-- React Router
-- Zustand
-- React Hook Form
-- Zod
-- Recharts
+### Frontend
+| Tech | Purpose |
+|------|---------|
+| React + Vite | UI framework & build tool |
+| Tailwind CSS | Styling |
+| Framer Motion | Animations |
+| React Router | Client-side routing |
+| Zustand | State management |
+| React Hook Form + Zod | Forms & validation |
+| Recharts | Data visualization |
 
-## Backend
+### Backend
+| Tech | Purpose |
+|------|---------|
+| Node.js + Express | REST API server |
+| Socket.io | Real-time notifications |
 
-The backend powers the core functionality of the platform by managing APIs, handling application data, and supporting real-time communication features. The earlier attached project structure described the backend as an Express and Socket.io based service, which aligns with the marketplace workflow and live notification model used in CampusRent. [file:1][file:2]
-
-### Backend Tech
-- Node.js
-- Express
-- Socket.io
+---
 
 ## Project Structure
 
-```text
-frontend/   React frontend
-backend/    Express + Socket.io backend
+```
+CampusRent/
+├── frontend/        # React app (Vite)
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── store/        # Zustand state
+│   │   └── utils/
+│   └── package.json
+│
+└── backend/         # Express + Socket.io server
+    ├── routes/
+    ├── controllers/
+    ├── models/
+    └── package.json
 ```
 
-## Purpose
+---
 
-The purpose of CampusRent is to build a campus-centered digital rental solution that helps students borrow and lend useful items more efficiently. It demonstrates how a modern full-stack web application can support trust, convenience, accessibility, and better resource sharing inside a student community. [file:1]
+## Getting Started
 
+### Prerequisites
+- Node.js v18+
+- npm or yarn
+
+### Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/AtharvaK-XD/CampusRent.git
+cd CampusRent
+```
+
+**Start the backend:**
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+**Start the frontend:**
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend runs on `http://localhost:5173` · Backend runs on `http://localhost:3000`
+
+---
+
+## Who is this for?
+
+- **Borrowers** — students who need something temporarily and don't want to spend full price
+- **Lenders** — students who have items sitting unused and want to earn from them
+- **Campus communities** — any college looking for a smarter internal resource-sharing system
+
+---
+
+
+## Contributing
+
+Pull requests are welcome. For major changes, open an issue first to discuss what you'd like to change.
+
+---
+
+## License
+
+[MIT](LICENSE)
+
+---
+
+> Built by [@AtharvaK-XD](https://github.com/AtharvaK-XD)
