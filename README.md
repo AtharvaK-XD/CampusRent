@@ -5,6 +5,12 @@
 
 ---
 
+## Demo
+
+[![CampusRent Demo](https://img.youtube.com/vi/88sbSNVR8k8/maxresdefault.jpg)](https://www.youtube.com/watch?v=88sbSNVR8k8)
+
+---
+
 ## What is CampusRent?
 
 CampusRent is a student-first platform that makes it easy to rent items within your campus community — no sketchy strangers, no overpriced stores, no hassle. Whether you need a projector for a presentation, a drill for your hostel wall, or a camera for a weekend trip, CampusRent connects you with a fellow student who has it.
